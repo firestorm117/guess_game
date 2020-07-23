@@ -1,0 +1,29 @@
+
+    <html>
+    <head>
+    <title>Guessing Game for PRATEEK VIKRAM SINGH 3324e089</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1" >
+    </head>
+    <body>
+    <h1>Welcome to my guessing game</h1>
+    <h3>Guess the number</h3>
+    <label><input type="number" id="ans" ></label>
+    <button onclick="check()">Submit</button>
+    <p id="qwert" style="color:red">
+    </p>
+    <script>
+
+           var cor=Math.floor((Math.random() * 5000) + 1);
+       function check(){
+           var ans=document.getElementById('ans').value;
+           if(cor==ans)
+           out="Correct.......";
+           else if (cor<ans)
+           out="Tooooo Big";
+           else
+           out="Tooooo Small";
+            document.getElementById("qwert").innerHTML=out;
+        }
+    </script>
+    </body>
+    </html>
